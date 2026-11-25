@@ -1,0 +1,96 @@
+
+.input-field-container {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.required-star {
+  color: #dc3545;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background: white;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.custom-input:focus {
+  border-color: #e88900;
+  box-shadow: 0 0 0 3px rgba(232, 137, 0, 0.12);
+}
+
+.custom-input::placeholder {
+  color: #aaa;
+}
+
+.input-icon {
+  position: absolute;
+  left: 13px;
+  display: flex;
+  color: #777;
+  z-index: 1;
+}
+
+.input-icon + .custom-input {
+  padding-left: 42px;
+}
+
+.custom-textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 13px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: #b56b00;
+}
+
+.input-error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.custom-input:disabled {
+  background: #f3f3f3;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .custom-input {
+    padding: 12px;
+  }
+}

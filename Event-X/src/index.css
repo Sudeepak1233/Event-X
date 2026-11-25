@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #242338;
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --color-ink: #242338;
+  --color-muted: #727387;
+  --color-brand: #e88900;
+  --color-brand-dark: #c87500;
+  --color-surface: #ffffff;
+  --color-border: #e9e9f0;
+  --shadow-card: 0 12px 35px rgba(31, 29, 55, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-ink);
+  background: #f7f8fc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(232, 137, 0, 0.38);
+  outline-offset: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #202034;
+  line-height: 1.2;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-layout {
+  min-height: 100vh;
+  overflow: clip;
+  background: #fff;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.route-loading {
+  display: grid;
+  min-height: 45vh;
+  place-items: center;
+  color: var(--color-muted);
+  font-weight: 650;
+}
+
+::selection {
+  color: #fff;
+  background: #e88900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
